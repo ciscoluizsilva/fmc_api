@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='fmc_api',
-    version='0.1.0',
+    version='0.1.1',
     packages=find_packages(),
     description='FMC API Framework for General Usage',
     long_description=open('README.md').read(),

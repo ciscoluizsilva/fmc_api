@@ -10,3 +10,6 @@ def list_domains(self)->List[Domain]:
     for domain in raw_answer['items']:
         domains.append(Domain(**domain))
     return domains
+
+def set_domain(self, domain_uuid:str)->None:
+        self.domain = domain_uuid

@@ -11,7 +11,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 class SecureFWMgmt(BaseModel):
-    from .domains import list_domains
+    from .domains import list_domains, set_domain
     from .objects import list_network_objects,delete_network_object, list_host_objects, delete_host_object
     from .objects import list_networkgroups_objects, delete_networkgroups_object, list_range_objects, delete_range_object
     from .objects import list_fqdn_objects, delete_fqdn_object
@@ -74,9 +74,6 @@ class SecureFWMgmt(BaseModel):
 
     def generate_header_x_auth(self):
         return {'X-auth-access-token': self.current_token}
-    
-    def set_domain(self, domain_uuid:str)->None:
-        self.domain = domain_uuid
 
     def get(self, target):
         self.token_refresh()
