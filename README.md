@@ -2,9 +2,11 @@
 
 - This is a WIP
 
-## Objective - Have an Python API Framework to perform quick tasks
+## Objective 
+- Have an Python API Framework to perform quick tasks
 
-## Missing an API Endpoint ? Open an issue, and will address whenever possible.
+## Missing an API Endpoint ? 
+- Open an issue, and will address whenever possible.
 
 ## How to Install:
 ```
